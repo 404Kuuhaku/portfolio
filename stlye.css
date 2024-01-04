@@ -1,59 +1,82 @@
-/* Custom styles */
+
 body {
-    background-color: #212121;
-    color: #fff;
-    padding-top: 60px; /* Adjust padding to account for fixed navbar */
-  }
+  background-color: #333333;
+  color: #fff;
+  padding-top: 60px;
+  font-family: 'Mitr', sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.row{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.img-container {
+  max-width: 100%; 
+  height: auto; 
+  overflow: hidden;
+  margin-bottom: 20px; 
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  clip-path: polygon(
+    34% 16%,
+    66% 1%,
+    99% 28%,
+    94% 69%,
+    68% 100%,
+    31% 96%,
+    5% 70%,
+    4% 27%
+  );
   
-  .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-  }
-  
+}
+
+
+.container-main{
+  margin-top: 15rem;
+}
+
+
+.small-logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 1.5rem;
+}
+
+footer {
+  margin-left: 5rem;
+}
+
+
+@media (max-width: 768px) {
   .img-container {
-    max-width: 100%; /* Adjust for responsiveness */
-    height: auto; /* Allow height to adjust proportionally */
-    overflow: hidden;
-    margin-bottom: 20px; /* Add space below the image */
-  }
-  
-  .img-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 80%; 
     margin: auto;
-    clip-path: polygon(34% 16%, 66% 1%, 99% 28%, 94% 69%, 68% 100%, 31% 96%, 5% 70%, 4% 27%);
-    padding: 20px;
-    border-radius: 20px;
   }
 
-  .clip-shape img {
-    clip-path: polygon(50% 0%,100% 50%, 50% 100%);
+  .my-self {
+    text-align: center; 
   }
-  
-  .small-logo {
-    width: 48px;
-    height: 48px;
-    margin-right: 0.5rem;
+
+  .container-main{
+    margin-top: 5rem;
   }
-  
+
   footer {
-    margin-left: 5rem;
+    margin-left: 0; 
+    text-align: center; 
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .img-container {
-      width: 80%; /* Adjust for smaller screens */
-      margin: auto;
-    }
-
-    .my-self{
-        text-align: center; /* Center-align content */
-    }
-  
-    footer {
-      margin-left: 0; /* Reset margin for smaller screens */
-      text-align: center; /* Center-align content */
-    }
-  }
-  
+}
